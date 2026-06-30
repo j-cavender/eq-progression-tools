@@ -16,71 +16,71 @@ This project is in the initial setup stage.
 
 Currently included:
 
-* Next.js
-* TypeScript
-* App Router
-* Tailwind CSS
-* ESLint
-* `src/` directory structure
-* Import alias configured as `@/*`
+- Next.js
+- TypeScript
+- App Router
+- Tailwind CSS
+- ESLint
+- `src/` directory structure
+- Import alias configured as `@/*`
 
 Planned next steps:
 
-* Add Prisma
-* Connect PostgreSQL
-* Define the initial database schema
-* Add seed data
-* Build the first database-backed progress dashboard
+- Add Prisma
+- Connect PostgreSQL
+- Define the initial database schema
+- Add seed data
+- Build the first database-backed progress dashboard
 
 ## Planned MVP
 
 The first meaningful version of the app will allow a user to:
 
-* Create and manage characters
-* Create rare item collections
-* Track which characters need which items
-* Mark item progress as obtained, missing, banked, equipped, skipped, or similar
-* View progress by character and collection
+- Create and manage characters
+- Create rare item collections
+- Track which characters need which items
+- Mark item progress as obtained, missing, banked, equipped, skipped, or similar
+- View progress by character and collection
 
 ## Future Features
 
 Potential future features include:
 
-* Inventory text import
-* Item name normalization and matching
-* Import preview before applying updates
-* Import history
-* Spell database
-* DPS and efficiency calculations
-* Focus effect modeling
-* Basic combat rotation simulation
-* Charts and progress visualizations
-* Authentication and multi-user support
+- Inventory text import
+- Item name normalization and matching
+- Import preview before applying updates
+- Import history
+- Spell database
+- DPS and efficiency calculations
+- Focus effect modeling
+- Basic combat rotation simulation
+- Charts and progress visualizations
+- Authentication and multi-user support
 
 ## Tech Stack
 
 Current stack:
 
-* Next.js
-* TypeScript
-* Tailwind CSS
-* ESLint
-* GitHub Actions
-* Prettier
-* Dependabot
+- Next.js
+- TypeScript
+- Tailwind CSS
+- ESLint
+- GitHub Actions
+- Prettier
+- Dependabot
 
 Planned additions:
 
-* PostgreSQL
-* Prisma
-* Zod
-* Vitest
-* Recharts
-* shadcn/ui
-* Auth.js or similar authentication
-* Playwright
-* Vercel
-* Hosted PostgreSQL through Supabase, Neon, or a similar provider
+- PostgreSQL
+- Prisma
+- Zod
+- Vitest
+- Recharts
+- shadcn/ui
+- Auth.js or similar authentication
+- Playwright
+- Vercel
+- Hosted PostgreSQL through Supabase, Neon, or a similar provider
 
 ## Getting Started
 
@@ -146,14 +146,14 @@ This project is being built with a focus on learning, maintainability, and profe
 
 Guiding principles:
 
-* Keep early scope narrow
-* Keep `main` stable
-* Use feature branches for meaningful changes
-* Prefer small, focused pull requests
-* Keep business logic out of React components when possible
-* Use pure functions for parsing and calculation logic
-* Avoid unnecessary dependencies early
-* Do not merge code that cannot be explained
+- Keep early scope narrow
+- Keep `main` stable
+- Use feature branches for meaningful changes
+- Prefer small, focused pull requests
+- Keep business logic out of React components when possible
+- Use pure functions for parsing and calculation logic
+- Avoid unnecessary dependencies early
+- Do not merge code that cannot be explained
 
 ## Roadmap
 
