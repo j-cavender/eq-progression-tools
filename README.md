@@ -4,7 +4,7 @@ A full-stack MMO progression tracker for managing characters, rare item collecti
 
 ## Overview
 
-MMO Progression Tools is a portfolio-focused web application designed to replace spreadsheet-based progression tracking with a structured, database-backed dashboard.
+EQ Progression Tools is a portfolio-focused web application designed to replace spreadsheet-based progression tracking with a structured, database-backed dashboard.
 
 The initial goal is to support character tracking and rare item collection progress. Future features may include inventory text import, item matching, spell data modeling, and DPS calculation tools.
 
@@ -65,6 +65,9 @@ Current stack:
 * TypeScript
 * Tailwind CSS
 * ESLint
+* GitHub Actions
+* Prettier
+* Dependabot
 
 Planned additions:
 
@@ -76,7 +79,6 @@ Planned additions:
 * shadcn/ui
 * Auth.js or similar authentication
 * Playwright
-* GitHub Actions
 * Vercel
 * Hosted PostgreSQL through Supabase, Neon, or a similar provider
 
@@ -108,10 +110,28 @@ Start the development server:
 npm run dev
 ```
 
+Check formatting:
+
+```bash
+npm run format:check
+```
+
+Format files:
+
+```bash
+npm run format
+```
+
 Run linting:
 
 ```bash
 npm run lint
+```
+
+Run TypeScript type checking:
+
+```bash
+npm run typecheck
 ```
 
 Build for production:
