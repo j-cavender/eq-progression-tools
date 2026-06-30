@@ -65,13 +65,13 @@ Current stack:
 - TypeScript
 - Tailwind CSS
 - ESLint
+- PostgreSQL database created separately
 - GitHub Actions
 - Prettier
 - Dependabot
 
 Planned additions:
 
-- PostgreSQL
 - Prisma
 - Zod
 - Vitest
@@ -83,6 +83,12 @@ Planned additions:
 - Hosted PostgreSQL through Supabase, Neon, or a similar provider
 
 ## Getting Started
+
+Use the project Node.js version:
+
+```bash
+nvm use
+```
 
 Install dependencies:
 
@@ -138,6 +144,12 @@ Build for production:
 
 ```bash
 npm run build
+```
+
+Start the production server after building:
+
+```bash
+npm start
 ```
 
 ## Development Philosophy
