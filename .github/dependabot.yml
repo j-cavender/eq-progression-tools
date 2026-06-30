@@ -5,6 +5,15 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+    ignore:
+      - dependency-name: "eslint"
+        update-types:
+          - "version-update:semver-major"
 
   - package-ecosystem: "github-actions"
     directory: "/"
