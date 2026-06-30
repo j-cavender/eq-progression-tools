@@ -1,36 +1,156 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EQ Progression Tools
+
+A full-stack MMO progression tracker for managing characters, rare item collections, inventory imports, and future combat optimization tools.
+
+## Overview
+
+MMO Progression Tools is a portfolio-focused web application designed to replace spreadsheet-based progression tracking with a structured, database-backed dashboard.
+
+The initial goal is to support character tracking and rare item collection progress. Future features may include inventory text import, item matching, spell data modeling, and DPS calculation tools.
+
+This project is being built to demonstrate full-stack development, relational database design, CRUD workflows, data modeling, file parsing, business logic, and dashboard-style UI development.
+
+## Project Status
+
+This project is in the initial setup stage.
+
+Currently included:
+
+* Next.js
+* TypeScript
+* App Router
+* Tailwind CSS
+* ESLint
+* `src/` directory structure
+* Import alias configured as `@/*`
+
+Planned next steps:
+
+* Add Prisma
+* Connect PostgreSQL
+* Define the initial database schema
+* Add seed data
+* Build the first database-backed progress dashboard
+
+## Planned MVP
+
+The first meaningful version of the app will allow a user to:
+
+* Create and manage characters
+* Create rare item collections
+* Track which characters need which items
+* Mark item progress as obtained, missing, banked, equipped, skipped, or similar
+* View progress by character and collection
+
+## Future Features
+
+Potential future features include:
+
+* Inventory text import
+* Item name normalization and matching
+* Import preview before applying updates
+* Import history
+* Spell database
+* DPS and efficiency calculations
+* Focus effect modeling
+* Basic combat rotation simulation
+* Charts and progress visualizations
+* Authentication and multi-user support
+
+## Tech Stack
+
+Current stack:
+
+* Next.js
+* TypeScript
+* Tailwind CSS
+* ESLint
+
+Planned additions:
+
+* PostgreSQL
+* Prisma
+* Zod
+* Vitest
+* Recharts
+* shadcn/ui
+* Auth.js or similar authentication
+* Playwright
+* GitHub Actions
+* Vercel
+* Hosted PostgreSQL through Supabase, Neon, or a similar provider
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the app in your browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Available Scripts
 
-## Learn More
+Start the development server:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Run linting:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run lint
+```
 
-## Deploy on Vercel
+Build for production:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Development Philosophy
+
+This project is being built with a focus on learning, maintainability, and professional workflow habits.
+
+Guiding principles:
+
+* Keep early scope narrow
+* Keep `main` stable
+* Use feature branches for meaningful changes
+* Prefer small, focused pull requests
+* Keep business logic out of React components when possible
+* Use pure functions for parsing and calculation logic
+* Avoid unnecessary dependencies early
+* Do not merge code that cannot be explained
+
+## Roadmap
+
+Initial build order:
+
+1. Project documentation
+2. Prisma setup
+3. Initial database schema
+4. Seed/sample data
+5. First database-backed dashboard
+6. Character management
+7. Rare item collection tracking
+8. Manual item progress updates
+9. Inventory import parser
+10. Import preview workflow
+11. Spell and DPS tools
+
+## License
+
+License information has not been added yet.
