@@ -1,4 +1,5 @@
 <!-- BEGIN:nextjs-agent-rules -->
+
 # This is NOT the Next.js you know
 
 This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
@@ -20,6 +21,9 @@ The project is currently in early setup. Prefer small, explainable changes that 
 - TypeScript
 - Tailwind CSS
 - ESLint
+- GitHub Actions
+- Prettier
+- Dependabot
 - PostgreSQL database created separately
 
 ## Planned Tech Stack
@@ -58,7 +62,10 @@ The project is currently in early setup. Prefer small, explainable changes that 
 ## Commands
 
 - Run dev server: `npm run dev`
+- Check formatting: `npm run format:check`
+- Format files: `npm run format`
 - Run lint: `npm run lint`
+- Run TypeScript type checking: `npm run typecheck`
 - Run build: `npm run build`
 
 ## Safety Rules
