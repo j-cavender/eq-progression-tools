@@ -9,7 +9,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 ## Project Overview
 
-This is a learning-focused Next.js + TypeScript project for building an MMO progression tools app.
+This is a learning-focused Next.js + TypeScript project for building an EQ progression tools app.
 
 The planned app will track characters, rare item collections, inventory import files, and spell/DPS optimization.
 
@@ -25,10 +25,10 @@ The project is currently in early setup. Prefer small, explainable changes that 
 - Prettier
 - Dependabot
 - PostgreSQL database created separately
+- Prisma for database access and migrations
 
 ## Planned Tech Stack
 
-- Prisma for database access and migrations
 - Zod for input validation
 - Vitest for unit testing parser/calculation logic
 - Recharts for dashboards and visualizations
@@ -46,7 +46,7 @@ The project is currently in early setup. Prefer small, explainable changes that 
 - `src/lib/inventory/` will contain inventory export parsing, item normalization, matching, and import-preview logic.
 - `src/lib/dps/` will contain spell damage calculations, focus-effect application, spell ranking, and rotation simulation.
 - `src/lib/validations/` will contain validation schemas once Zod is added.
-- `prisma/` will contain Prisma schema, migrations, and seed data once Prisma is configured.
+- `prisma/` will contain Prisma schema, migrations, and seed data as the database schema grows.
 
 ## Coding Guidelines
 
@@ -67,6 +67,8 @@ The project is currently in early setup. Prefer small, explainable changes that 
 - Run lint: `npm run lint`
 - Run TypeScript type checking: `npm run typecheck`
 - Run build: `npm run build`
+- Prisma validate: `npm run prisma:validate`
+- Prisma generate: `npm run prisma:generate`
 
 ## Safety Rules
 
