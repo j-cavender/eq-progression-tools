@@ -23,11 +23,11 @@ Currently included:
 - ESLint
 - `src/` directory structure
 - Import alias configured as `@/*`
+- Add Prisma
+- Connect PostgreSQL
 
 Planned next steps:
 
-- Add Prisma
-- Connect PostgreSQL
 - Define the initial database schema
 - Add seed data
 - Build the first database-backed progress dashboard
