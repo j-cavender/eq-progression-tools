@@ -1,8 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Get a free hosted Postgres database in seconds: `npx create-db`
-
 generator client {
   provider = "prisma-client"
   output   = "../generated/prisma"
@@ -10,4 +5,68 @@ generator client {
 
 datasource db {
   provider = "postgresql"
+}
+
+model CollectionSet {
+  id               Int               @id @default(autoincrement())
+  name             String            @unique
+  collectionGroups CollectionGroup[]
+}
+
+model CollectionGroup {
+  id                   Int                   @id @default(autoincrement())
+  collectionSet        CollectionSet         @relation(fields: [collectionSetId], references: [id])
+  resultItem           Item?                 @relation(fields: [resultItemId], references: [id])
+  collectionSetId      Int
+  name                 String
+  sortOrder            Int
+  resultItemId         Int?
+  collectionGroupItems CollectionGroupItem[]
+
+  @@unique([collectionSetId, name])
+  @@unique([collectionSetId, sortOrder])
+}
+
+model CollectionGroupItem {
+  id                Int             @id @default(autoincrement())
+  collectionGroup   CollectionGroup @relation(fields: [collectionGroupId], references: [id])
+  item              Item            @relation(fields: [itemId], references: [id])
+  collectionGroupId Int
+  itemId            Int
+  sortOrder         Int
+
+  @@unique([collectionGroupId, itemId])
+  @@unique([collectionGroupId, sortOrder])
+}
+
+model Item {
+  id                      Int                     @id @default(autoincrement())
+  name                    String
+  gameItemId              Int?                    @unique
+  collectionGroupItems    CollectionGroupItem[]
+  characterItemProgresses CharacterItemProgress[]
+  collectionGroups        CollectionGroup[]
+}
+
+model Character {
+  id                      Int                     @id @default(autoincrement())
+  name                    String                  @unique
+  characterItemProgresses CharacterItemProgress[]
+}
+
+model CharacterItemProgress {
+  id          Int            @id @default(autoincrement())
+  item        Item           @relation(fields: [itemId], references: [id])
+  character   Character      @relation(fields: [characterId], references: [id])
+  itemId      Int
+  characterId Int
+  status      ProgressStatus @default(missing)
+  updatedAt   DateTime       @updatedAt
+
+  @@unique([characterId, itemId])
+}
+
+enum ProgressStatus {
+  missing
+  obtained
 }
