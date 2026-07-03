@@ -23,11 +23,11 @@ Currently included:
 - ESLint
 - `src/` directory structure
 - Import alias configured as `@/*`
+- Add Prisma
+- Connect PostgreSQL
 
 Planned next steps:
 
-- Add Prisma
-- Connect PostgreSQL
 - Define the initial database schema
 - Add seed data
 - Build the first database-backed progress dashboard
@@ -69,10 +69,10 @@ Current stack:
 - GitHub Actions
 - Prettier
 - Dependabot
+- Prisma
 
 Planned additions:
 
-- Prisma
 - Zod
 - Vitest
 - Recharts
@@ -150,6 +150,18 @@ Start the production server after building:
 
 ```bash
 npm start
+```
+
+Validate Prisma schema:
+
+```bash
+npm run prisma:validate
+```
+
+Generate Prisma client:
+
+```bash
+npm run prisma:generate
 ```
 
 ## Development Philosophy
