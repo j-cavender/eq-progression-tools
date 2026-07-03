@@ -1,4 +1,4 @@
-Initial schema, barebones for initial focused scope.  Character name is unique currently, will need to
+Initial schema, barebones for initial focused scope. Character name is unique currently, will need to
 be updated when users are added to instead be unique to each user.
 
 ```mermaid

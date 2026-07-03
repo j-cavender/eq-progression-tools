@@ -25,10 +25,10 @@ Currently included:
 - Import alias configured as `@/*`
 - Prisma
 - PostgreSQL
+- Initial database schema defined
 
 Planned next steps:
 
-- Define the initial database schema
 - Add seed data
 - Build the first database-backed progress dashboard
 
