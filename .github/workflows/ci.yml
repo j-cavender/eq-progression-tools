@@ -61,7 +61,7 @@ jobs:
 
   prisma:
     name: prisma
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v7
