@@ -23,8 +23,8 @@ Currently included:
 - ESLint
 - `src/` directory structure
 - Import alias configured as `@/*`
-- Add Prisma
-- Connect PostgreSQL
+- Prisma
+- PostgreSQL
 
 Planned next steps:
 
